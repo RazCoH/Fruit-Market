@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    >
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_fruits_logo"
+        />
+
+    <TextView
+        android:id="@+id/tvSplashTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/splash_title"
+        android:textColor="@color/red"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_black"
+        android:textSize="32dp"
+        />
+
+    <TextView
+        android:id="@+id/tvSplashSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/splash_sub_title"
+        android:textColor="@color/red"
+        android:layout_below="@+id/tvSplashTitle"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_extra_light"
+        android:textSize="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvVersionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/splash_version_num"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_extra_light"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:textColor="@color/red"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

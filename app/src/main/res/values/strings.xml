@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fruit Market</string>
+    <string name="fruits_list_title">Our Fruits</string>
+    <string name="splash_title">Fruits Market</string>
+    <string name="splash_sub_title">fresh : health : taste</string>
+    <string name="splash_version_num">version 1.0.0</string>
+    <string name="add_to_cart_btn">Add To Cart</string>
+    <string name="add_to_cart_dialog_title">Your Item Added Successfully!</string>
+    <string name="add_to_cart_dialog_got_it">Got It</string>
+    <string name="load_fruits_error">Server error, please try again later</string>
+    <string name="double_back_press_text">Press back again to exit</string>
+</resources>

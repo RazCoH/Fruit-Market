@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="fruitItem"
+            type="com.raz.matrixexcercise.model.Fruit" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp"
+        android:layoutDirection="ltr"
+        app:cardBackgroundColor="@color/cream"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivFruit"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:scaleType="centerCrop"
+                app:loadWithGlide="@{fruitItem.image}"
+                app:shapeAppearanceOverlay="@style/rounded_corners" />
+
+
+            <TextView
+                android:id="@+id/tvFruitTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/ivFruit"
+                android:fontFamily="@font/montserrat_black"
+                android:text="@{fruitItem.name}"
+                android:textColor="@color/orange"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvFruitDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFruitTitle"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/ivFruit"
+                android:fontFamily="@font/montserrat_extra_light"
+                android:text="@{fruitItem.description}"
+                android:textColor="@color/red"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="14dp"
+                android:fontFamily="@font/montserrat_black"
+                android:text="@{fruitItem.price + `₪`}"
+                android:textColor="@color/orange"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
